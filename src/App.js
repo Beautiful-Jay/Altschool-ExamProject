@@ -3,7 +3,6 @@ import NoPage from "./components/NoPage";
 import Content from "./components/Content";
 import Home from "./components/Home";
 import background from "./background.jpg";
-import { ErrorBoundary } from "./components/ErrorBoundary";
 import "./App.css";
 import CustomHook from "./components/CustomHook";
 import Reducer from "./components/Reducer";
@@ -16,7 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="custom" element={<CustomHook />} />
         <Route path="reducer" element={<Reducer />} />
-        <Route path="content" element={<ErrorBoundary><Content /> </ErrorBoundary>} />
+        <Route path="content" element={<Content /> } />
         <Route path="*" element={<NoPage />} />
       </Routes>
    </section>
